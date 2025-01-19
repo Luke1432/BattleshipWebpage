@@ -1,0 +1,148 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f0f8ff;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #container {
+    max-width: 600px;
+    margin: 50px auto;
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 5px;
+    margin: 20px auto;
+  }
+  
+  button {
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .cell {
+    width: 40px;
+    height: 40px;
+    background-color: #d9edf7;
+    border: 1px solid #0275d8;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  .cell.hit {
+    background-color: red;
+  }
+  
+  .cell.miss {
+    background-color: blue;
+  }
+  
+  #game-over {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: black;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    size: 100%;
+  }
+
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margins */
+    background-color: #f0f0f0; /* Optional background color */
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Add spacing between elements */
+  }
+  
+  #game-board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px); /* 10 columns, each 40px wide */
+    grid-gap: 5px; /* Add spacing between cells */
+    justify-content: center; /* Center grid horizontally */
+    align-content: center; /* Center grid vertically */
+  }
+  
+  button.cell {
+    width: 40px;
+    height: 40px;
+    background-color: #ddd;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  button.cell.hit {
+    background-color: red;
+    color: white;
+  }
+  
+  button.cell.miss {
+    background-color: blue;
+    color: white;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #777777;
+  }
+  
+  #game-over {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: white;
+    border: 2px solid #ccc;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  #scoreboard {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  #score, #high-score {
+    margin: 0;
+  }
+  

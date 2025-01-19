@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship Game</title>
+  <link rel="stylesheet" href="battleship.css">
+</head>
+<body>
+  <div id="container">
+    <h1>Battleship Game</h1>
+    <div id="controls">
+      <button id="start-game">Start Game</button>
+      <button id="restart-game" style="display: none;">Restart Game</button>
+    </div>
+    <div id="game-board" style="display: none;"></div>
+    <div id="game-over" style="display: none;">
+      <p id="game-message"></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+  <div id="game-container">
+    <div id="scoreboard">
+      <p id="score">Score: 1000</p>
+      <p id="high-score">High Score: 0</p>
+    </div>
+    <div id="game-board"></div>
+    <div id="game-over">
+      <p id="game-message"></p>
+      <button id="play-again">Play Again</button>
+    </div>
+  </div>
+  
+  <script src="battleshipscript.js"></script>
+</body>
+</html>
